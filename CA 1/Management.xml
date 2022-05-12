@@ -1,0 +1,382 @@
+<object-stream>
+  <Main.Driver>
+    <centres>
+      <head>
+        <next>
+          <next>
+            <previous reference="../.."/>
+            <contents class="Models.VaccinationCentre">
+              <name>Cork</name>
+              <address>Cork</address>
+              <eircode>T12 89TY</eircode>
+              <parkingSpaces>550</parkingSpaces>
+              <booths>
+                <head>
+                  <next>
+                    <next>
+                      <next>
+                        <next>
+                          <next>
+                            <next>
+                              <previous reference="../.."/>
+                              <contents class="Models.VaccinationBooth">
+                                <boothID>G4</boothID>
+                                <accessibilityInfo></accessibilityInfo>
+                                <floorLevel>2</floorLevel>
+                                <appointments>
+                                  <size>0</size>
+                                </appointments>
+                              </contents>
+                            </next>
+                            <previous reference="../.."/>
+                            <contents class="Models.VaccinationBooth">
+                              <boothID>G3</boothID>
+                              <accessibilityInfo></accessibilityInfo>
+                              <floorLevel>2</floorLevel>
+                              <appointments>
+                                <size>0</size>
+                              </appointments>
+                            </contents>
+                          </next>
+                          <previous reference="../.."/>
+                          <contents class="Models.VaccinationBooth">
+                            <boothID>G2</boothID>
+                            <accessibilityInfo></accessibilityInfo>
+                            <floorLevel>2</floorLevel>
+                            <appointments>
+                              <size>0</size>
+                            </appointments>
+                          </contents>
+                        </next>
+                        <previous reference="../.."/>
+                        <contents class="Models.VaccinationBooth">
+                          <boothID>G1</boothID>
+                          <accessibilityInfo></accessibilityInfo>
+                          <floorLevel>2</floorLevel>
+                          <appointments>
+                            <size>0</size>
+                          </appointments>
+                        </contents>
+                      </next>
+                      <previous reference="../.."/>
+                      <contents class="Models.VaccinationBooth">
+                        <boothID>A3</boothID>
+                        <accessibilityInfo></accessibilityInfo>
+                        <floorLevel>1</floorLevel>
+                        <appointments>
+                          <size>0</size>
+                        </appointments>
+                      </contents>
+                    </next>
+                    <previous reference="../.."/>
+                    <contents class="Models.VaccinationBooth">
+                      <boothID>A2</boothID>
+                      <accessibilityInfo></accessibilityInfo>
+                      <floorLevel>1</floorLevel>
+                      <appointments>
+                        <head>
+                          <contents class="Models.VaccinationAppointment">
+                            <date>2021-10-21</date>
+                            <time>13:00</time>
+                            <type>Moderna</type>
+                            <batchNum>MOD124</batchNum>
+                            <vaccinatorDetails></vaccinatorDetails>
+                            <patientPPSN>1234569OP</patientPPSN>
+                          </contents>
+                        </head>
+                        <tail reference="../head"/>
+                        <size>1</size>
+                      </appointments>
+                    </contents>
+                  </next>
+                  <contents class="Models.VaccinationBooth">
+                    <boothID>A1</boothID>
+                    <accessibilityInfo></accessibilityInfo>
+                    <floorLevel>1</floorLevel>
+                    <appointments>
+                      <size>-1</size>
+                    </appointments>
+                  </contents>
+                </head>
+                <tail reference="../head/next/next/next/next/next/next"/>
+                <size>7</size>
+              </booths>
+            </contents>
+          </next>
+          <previous reference="../.."/>
+          <contents class="Models.VaccinationCentre">
+            <name>Kilkenny</name>
+            <address>Kilkenny</address>
+            <eircode>R95 45LP</eircode>
+            <parkingSpaces>110</parkingSpaces>
+            <booths>
+              <head>
+                <next>
+                  <next>
+                    <previous reference="../.."/>
+                    <contents class="Models.VaccinationBooth">
+                      <boothID>A3</boothID>
+                      <accessibilityInfo></accessibilityInfo>
+                      <floorLevel>1</floorLevel>
+                      <appointments>
+                        <size>0</size>
+                      </appointments>
+                    </contents>
+                  </next>
+                  <previous reference="../.."/>
+                  <contents class="Models.VaccinationBooth">
+                    <boothID>A2</boothID>
+                    <accessibilityInfo></accessibilityInfo>
+                    <floorLevel>1</floorLevel>
+                    <appointments>
+                      <size>0</size>
+                    </appointments>
+                  </contents>
+                </next>
+                <contents class="Models.VaccinationBooth">
+                  <boothID>A1</boothID>
+                  <accessibilityInfo></accessibilityInfo>
+                  <floorLevel>1</floorLevel>
+                  <appointments>
+                    <size>-1</size>
+                  </appointments>
+                </contents>
+              </head>
+              <tail reference="../head/next/next"/>
+              <size>3</size>
+            </booths>
+          </contents>
+        </next>
+        <contents class="Models.VaccinationCentre">
+          <name>Waterford</name>
+          <address>Waterford</address>
+          <eircode>X91 12OP</eircode>
+          <parkingSpaces>245</parkingSpaces>
+          <booths>
+            <head>
+              <next>
+                <next>
+                  <next>
+                    <next>
+                      <previous reference="../.."/>
+                      <contents class="Models.VaccinationBooth">
+                        <boothID>B2</boothID>
+                        <accessibilityInfo></accessibilityInfo>
+                        <floorLevel>2</floorLevel>
+                        <appointments>
+                          <size>0</size>
+                        </appointments>
+                      </contents>
+                    </next>
+                    <previous reference="../.."/>
+                    <contents class="Models.VaccinationBooth">
+                      <boothID>B1</boothID>
+                      <accessibilityInfo></accessibilityInfo>
+                      <floorLevel>2</floorLevel>
+                      <appointments>
+                        <head>
+                          <contents class="Models.VaccinationAppointment">
+                            <date>2021-09-14</date>
+                            <time>12:00</time>
+                            <type>Pfizer</type>
+                            <batchNum>PFI1234</batchNum>
+                            <vaccinatorDetails></vaccinatorDetails>
+                            <patientPPSN>1234567PP</patientPPSN>
+                          </contents>
+                        </head>
+                        <tail reference="../head"/>
+                        <size>1</size>
+                      </appointments>
+                    </contents>
+                  </next>
+                  <previous reference="../.."/>
+                  <contents class="Models.VaccinationBooth">
+                    <boothID>A3</boothID>
+                    <accessibilityInfo></accessibilityInfo>
+                    <floorLevel>1</floorLevel>
+                    <appointments>
+                      <head>
+                        <previous>
+                          <next reference="../.."/>
+                          <contents class="Models.VaccinationAppointment">
+                            <date>2021-11-09</date>
+                            <time>10:00</time>
+                            <type>AstraZeneca</type>
+                            <batchNum>AZ12341</batchNum>
+                            <vaccinatorDetails></vaccinatorDetails>
+                            <patientPPSN>4545455PC</patientPPSN>
+                          </contents>
+                        </previous>
+                        <contents class="Models.VaccinationAppointment">
+                          <date>2021-11-17</date>
+                          <time>12:00</time>
+                          <type>AstraZeneca</type>
+                          <batchNum>AZ2222</batchNum>
+                          <vaccinatorDetails></vaccinatorDetails>
+                          <patientPPSN>4545455PC</patientPPSN>
+                        </contents>
+                      </head>
+                      <tail reference="../head"/>
+                      <size>1</size>
+                    </appointments>
+                  </contents>
+                </next>
+                <previous reference="../.."/>
+                <contents class="Models.VaccinationBooth">
+                  <boothID>A2</boothID>
+                  <accessibilityInfo></accessibilityInfo>
+                  <floorLevel>1</floorLevel>
+                  <appointments>
+                    <head>
+                      <contents class="Models.VaccinationAppointment">
+                        <date>2021-10-20</date>
+                        <time>10:00</time>
+                        <type>Pfizer</type>
+                        <batchNum>12344PFI</batchNum>
+                        <vaccinatorDetails></vaccinatorDetails>
+                        <patientPPSN>2188038UU</patientPPSN>
+                      </contents>
+                    </head>
+                    <tail reference="../head"/>
+                    <size>1</size>
+                  </appointments>
+                </contents>
+              </next>
+              <contents class="Models.VaccinationBooth">
+                <boothID>A1</boothID>
+                <accessibilityInfo></accessibilityInfo>
+                <floorLevel>1</floorLevel>
+                <appointments>
+                  <size>-1</size>
+                </appointments>
+              </contents>
+            </head>
+            <tail reference="../head/next/next/next/next"/>
+            <size>5</size>
+          </booths>
+        </contents>
+      </head>
+      <tail reference="../head/next/next"/>
+      <size>3</size>
+    </centres>
+    <patients>
+      <head>
+        <next>
+          <next>
+            <next>
+              <next>
+                <next>
+                  <next>
+                    <next>
+                      <previous reference=".."/>
+                      <contents class="Models.Patient">
+                        <dateOfBirth>2021-09-15</dateOfBirth>
+                        <PPSN>4545455PC</PPSN>
+                        <firstName>Peter </firstName>
+                        <secondName>Carew</secondName>
+                        <phoneNum>123456</phoneNum>
+                        <email>peter@carew.ie</email>
+                        <address>Waterford</address>
+                        <eircode>X91 W9WW</eircode>
+                        <accessibilityInfo></accessibilityInfo>
+                        <records>
+                          <head>
+                            <contents class="Models.VaccinationRecord">
+                              <date>2021-10-20</date>
+                              <type>AstraZeneca</type>
+                              <batchNum>AZ2222</batchNum>
+                            </contents>
+                          </head>
+                          <tail reference="../head"/>
+                          <size>1</size>
+                        </records>
+                      </contents>
+                    </next>
+                    <previous reference=".."/>
+                    <contents class="Models.Patient" reference="../next/contents"/>
+                  </next>
+                  <previous reference=".."/>
+                  <contents class="Models.Patient" reference="../next/next/contents"/>
+                </next>
+                <previous reference=".."/>
+                <contents class="Models.Patient">
+                  <dateOfBirth>2019-11-06</dateOfBirth>
+                  <PPSN>1234567PP</PPSN>
+                  <firstName>Cian</firstName>
+                  <secondName>Farrell</secondName>
+                  <phoneNum>123456</phoneNum>
+                  <email>cian@farrell</email>
+                  <address>Waterford</address>
+                  <eircode>X91 W9R9</eircode>
+                  <accessibilityInfo></accessibilityInfo>
+                  <records>
+                    <head>
+                      <contents class="Models.VaccinationRecord">
+                        <date>2021-08-04</date>
+                        <type>Pfizer</type>
+                        <batchNum>PFI1234</batchNum>
+                      </contents>
+                    </head>
+                    <tail reference="../head"/>
+                    <size>1</size>
+                  </records>
+                </contents>
+              </next>
+              <previous reference="../.."/>
+              <contents class="Models.Patient">
+                <dateOfBirth>2016-09-15</dateOfBirth>
+                <PPSN>1234569OP</PPSN>
+                <firstName>Jack</firstName>
+                <secondName>Donohoe</secondName>
+                <phoneNum>4554884</phoneNum>
+                <email>jack@donohoe.com</email>
+                <address>Cork</address>
+                <eircode>T12 9T0T</eircode>
+                <accessibilityInfo></accessibilityInfo>
+                <records>
+                  <head>
+                    <contents class="Models.VaccinationRecord">
+                      <date>2021-09-15</date>
+                      <type>Moderna</type>
+                      <batchNum>MOD124</batchNum>
+                    </contents>
+                  </head>
+                  <tail reference="../head"/>
+                  <size>1</size>
+                </records>
+              </contents>
+            </next>
+            <previous reference="../.."/>
+            <contents class="Models.Patient" reference="../next/next/contents"/>
+          </next>
+          <previous reference="../.."/>
+          <contents class="Models.Patient">
+            <dateOfBirth>2021-09-16</dateOfBirth>
+            <PPSN>2188038UU</PPSN>
+            <firstName>Moses</firstName>
+            <secondName>Ugwulo</secondName>
+            <phoneNum>123456</phoneNum>
+            <email>moses@ugwuoo</email>
+            <address>Larcheville</address>
+            <eircode>X91 9W9W</eircode>
+            <accessibilityInfo>Yes</accessibilityInfo>
+            <records>
+              <head>
+                <contents class="Models.VaccinationRecord">
+                  <date>2021-09-23</date>
+                  <type>Pfizer</type>
+                  <batchNum>12344PFI</batchNum>
+                </contents>
+              </head>
+              <tail reference="../head"/>
+              <size>1</size>
+            </records>
+          </contents>
+        </next>
+        <contents class="Models.Patient" reference="../next/next/next/next/next/next/next/contents"/>
+      </head>
+      <tail reference="../head/next/next/next/next/next/next/next"/>
+      <size>4</size>
+    </patients>
+  </Main.Driver>
+</object-stream>

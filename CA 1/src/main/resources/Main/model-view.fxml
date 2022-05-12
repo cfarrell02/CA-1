@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" onKeyPressed="#delete" prefHeight="600.0" prefWidth="840.0" scaleShape="false" styleClass="dark" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.ModelController">
+   <children>
+      <ToolBar prefHeight="39.0" prefWidth="838.0">
+        <items>
+            <Button mnemonicParsing="false" onAction="#back" prefHeight="0.0" prefWidth="43.0" text="Back" />
+            <Button mnemonicParsing="false" onAction="#viewMainMenu" prefHeight="8.0" prefWidth="64.0" text="Home" />
+        </items>
+      </ToolBar>
+      <ListView fx:id="mainList" onMouseClicked="#view" onMousePressed="#viewEdit" prefHeight="381.0" prefWidth="838.0" />
+      <Text fx:id="modelTitle" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #d4d4d4;" text="Vaccination Centre" textAlignment="CENTER" wrappingWidth="401.5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="boothAdd" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <TextArea fx:id="boothInfo" layoutX="319.0" layoutY="29.0" prefHeight="94.0" prefWidth="200.0" />
+                  <TextField fx:id="boothID" layoutX="60.0" layoutY="52.0" prefHeight="25.0" prefWidth="220.0" />
+                  <Label layoutX="149.0" layoutY="31.0" text="BoothID" />
+                  <Label layoutX="647.0" layoutY="31.0" text="Floor Level" />
+                  <Label layoutX="375.0" layoutY="6.0" text="Accessibility Info" />
+                  <Button layoutX="243.0" layoutY="111.0" mnemonicParsing="false" onAction="#addBooth" text="Add New" />
+                  <TextField fx:id="boothLevel" layoutX="561.0" layoutY="52.0" prefHeight="25.0" prefWidth="220.0" />
+                  <Button layoutX="525.0" layoutY="111.0" mnemonicParsing="false" onAction="#editBooth" text="Edit Selected" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="patientAdd" prefHeight="174.0" prefWidth="640.0">
+               <children>
+                  <TextField fx:id="firstName" layoutX="16.0" layoutY="15.0" />
+                  <TextField fx:id="lastName" layoutX="16.0" layoutY="53.0" />
+                  <DatePicker fx:id="dob" layoutX="17.0" layoutY="95.0" prefHeight="25.0" prefWidth="149.0" />
+                  <TextField fx:id="phoneNum" layoutX="205.0" layoutY="15.0" />
+                  <TextField fx:id="email" layoutX="205.0" layoutY="53.0" />
+                  <TextField fx:id="ppsn" layoutX="205.0" layoutY="95.0" />
+                  <TextArea fx:id="address" layoutX="394.0" layoutY="27.0" prefHeight="85.0" prefWidth="189.0" />
+                  <Label layoutX="61.0" layoutY="-2.0" text="First Name" />
+                  <Label layoutX="62.0" layoutY="38.0" text="Last Name" />
+                  <Label layoutX="57.0" layoutY="80.0" text="Date of Birth" />
+                  <Label layoutX="239.0" layoutY="-2.0" text="Phone Number" />
+                  <Label layoutX="265.0" layoutY="38.0" text="Email" />
+                  <Label layoutX="265.0" layoutY="81.0" text="PPSN" />
+                  <Label layoutX="467.0" layoutY="6.0" text="Address" />
+                  <TextArea fx:id="accessibility" layoutX="623.0" layoutY="76.0" prefHeight="38.0" prefWidth="189.0" />
+                  <Label layoutX="666.0" layoutY="61.0" text="Accessibility Details" />
+                  <Button layoutX="325.0" layoutY="121.0" mnemonicParsing="false" onAction="#addPatient" text="Add New" />
+                  <Button layoutX="423.0" layoutY="121.0" mnemonicParsing="false" onAction="#editPatient" text="Edit Selected" />
+                  <Button layoutX="633.0" layoutY="121.0" mnemonicParsing="false" onAction="#showSmartAdd" text="Smart Create Appointment" />
+                  <TextField fx:id="patientEircode" layoutX="623.0" layoutY="34.0" prefHeight="25.0" prefWidth="189.0" />
+                  <Label layoutX="704.0" layoutY="19.0" text="Eircode" />
+                  <Button layoutX="166.0" layoutY="123.0" mnemonicParsing="false" onAction="#sortPatients" text="Sort" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="recordAdd" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <DatePicker fx:id="recordDate" layoutX="28.0" layoutY="47.0" prefHeight="25.0" prefWidth="220.0" />
+                  <TextField fx:id="recordType" layoutX="593.0" layoutY="47.0" prefHeight="25.0" prefWidth="220.0" />
+                  <TextField fx:id="recordNum" layoutX="309.0" layoutY="47.0" prefHeight="25.0" prefWidth="220.0" />
+                  <Label layoutX="104.0" layoutY="19.0" text="Select a date" />
+                  <Label layoutX="690.0" layoutY="19.0" text="Type" />
+                  <Label layoutX="382.0" layoutY="19.0" text="Batch number" />
+                  <Button layoutX="375.0" layoutY="100.0" mnemonicParsing="false" onAction="#editRecord" text="Edit Selected" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="appointmentAdd" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <Button layoutX="276.0" layoutY="114.0" mnemonicParsing="false" onAction="#addAppointment" text="Add New" />
+                  <DatePicker fx:id="appointmentDate" layoutX="45.0" layoutY="24.0" prefHeight="25.0" prefWidth="220.0" />
+                  <ChoiceBox fx:id="appointmentTime" layoutX="45.0" layoutY="70.0" prefHeight="25.0" prefWidth="220.0" />
+                  <TextField fx:id="appointmentNum" layoutX="309.0" layoutY="24.0" prefHeight="25.0" prefWidth="220.0" />
+                  <TextArea fx:id="appointmentDetails" layoutX="620.0" layoutY="27.0" prefHeight="85.0" prefWidth="189.0" />
+                  <Label layoutX="143.0" layoutY="6.0" text="Date" textAlignment="CENTER" />
+                  <Label layoutX="142.0" layoutY="95.0" text="Type" />
+                  <Label layoutX="382.0" layoutY="6.0" text="Batch number" />
+                  <Label layoutX="385.0" layoutY="61.0" text="Patient PPSN" />
+                  <Label layoutX="667.0" layoutY="11.0" text="Vaccinator Details" />
+                  <Button layoutX="359.0" layoutY="113.0" mnemonicParsing="false" onAction="#editAppointment" text="Edit Selected" />
+                  <Button layoutX="455.0" layoutY="113.0" mnemonicParsing="false" onAction="#completeAppointment" text="Complete Appointment" />
+                  <ChoiceBox fx:id="appointmentType" layoutX="45.0" layoutY="113.0" prefHeight="25.0" prefWidth="220.0" />
+                  <Label layoutX="141.0" layoutY="53.0" text="Time" />
+                  <ChoiceBox fx:id="appointmentPPSN" layoutX="307.0" layoutY="83.0" prefHeight="25.0" prefWidth="220.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="centreAdd" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <TextField fx:id="eircode" layoutX="323.0" layoutY="105.0" prefWidth="220.0" />
+                  <TextArea fx:id="centreAddress" layoutX="323.0" layoutY="23.0" prefHeight="61.0" prefWidth="220.0" />
+                  <TextField fx:id="centreName" layoutX="59.0" layoutY="23.0" prefWidth="220.0" />
+                  <Label layoutX="153.0" layoutY="6.0" text="Name" />
+                  <Label layoutX="608.0" layoutY="6.0" text="No. of car parking spaces" />
+                  <Label layoutX="414.0" layoutY="88.0" text="Eircode" />
+                  <Label layoutX="412.0" layoutY="6.0" text="Address" />
+                  <Button layoutX="135.0" layoutY="84.0" mnemonicParsing="false" onAction="#addCentre" text="Add New" />
+                  <Button layoutX="631.0" layoutY="84.0" mnemonicParsing="false" onAction="#editCentre" text="Edit Selected" />
+                  <TextField fx:id="centreParkingSpaces" layoutX="565.0" layoutY="23.0" prefWidth="220.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="smartAdd" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <Button layoutX="357.0" layoutY="116.0" mnemonicParsing="false" onAction="#smartAdd" text="Book Appointment" />
+                  <DatePicker fx:id="smartDate" layoutX="208.0" layoutY="23.0" prefHeight="25.0" prefWidth="180.0" />
+                  <ChoiceBox fx:id="smartTime" layoutX="208.0" layoutY="79.0" prefHeight="25.0" prefWidth="180.0" />
+                  <TextField fx:id="smartBatchNum" layoutX="410.0" layoutY="23.0" prefHeight="25.0" prefWidth="180.0" />
+                  <TextArea fx:id="smartDetails" layoutX="620.0" layoutY="32.0" prefHeight="76.0" prefWidth="180.0" />
+                  <Label layoutX="286.0" layoutY="6.0" text="Date" textAlignment="CENTER" />
+                  <Label layoutX="487.0" layoutY="62.0" text="Type" />
+                  <Label layoutX="463.0" layoutY="6.0" text="Batch number" />
+                  <Label layoutX="667.0" layoutY="11.0" text="Vaccinator Details" />
+                  <ChoiceBox fx:id="smartType" layoutX="410.0" layoutY="79.0" prefHeight="25.0" prefWidth="180.0" />
+                  <Label layoutX="285.0" layoutY="62.0" text="Time" />
+                  <ChoiceBox fx:id="smartCentre" layoutX="14.0" layoutY="23.0" prefWidth="180.0" />
+                  <ChoiceBox fx:id="smartBooth" layoutX="14.0" layoutY="79.0" prefHeight="25.0" prefWidth="180.0" />
+                  <Label layoutX="86.0" layoutY="6.0" text="Centre" />
+                  <Label layoutX="88.0" layoutY="62.0" text="Booth" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</VBox>
