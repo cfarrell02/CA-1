@@ -1,0 +1,61 @@
+<object-stream>
+  <Main.Driver>
+    <centres>
+      <head>
+        <contents class="Models.VaccinationCentre">
+          <name>Waterford</name>
+          <address>Waterford</address>
+          <eircode>12345</eircode>
+          <parkingSpaces>222</parkingSpaces>
+          <booths>
+            <head>
+              <contents class="Models.VaccinationBooth">
+                <boothID>A1</boothID>
+                <accessibilityInfo>23</accessibilityInfo>
+                <floorLevel>23</floorLevel>
+                <appointments>
+                  <head>
+                    <contents class="Models.VaccinationAppointment">
+                      <date>2022-09-28</date>
+                      <time>12:00</time>
+                      <type>Pfizer</type>
+                      <batchNum>23</batchNum>
+                      <vaccinatorDetails>awdawd</vaccinatorDetails>
+                      <patientPPSN>1234566nn</patientPPSN>
+                    </contents>
+                  </head>
+                  <tail reference="../head"/>
+                  <size>1</size>
+                </appointments>
+              </contents>
+            </head>
+            <tail reference="../head"/>
+            <size>1</size>
+          </booths>
+        </contents>
+      </head>
+      <tail reference="../head"/>
+      <size>1</size>
+    </centres>
+    <patients>
+      <head>
+        <contents class="Models.Patient">
+          <dateOfBirth>2022-10-05</dateOfBirth>
+          <PPSN>1234566nn</PPSN>
+          <firstName>Ant</firstName>
+          <secondName>O&apos;Keeffe</secondName>
+          <phoneNum>123</phoneNum>
+          <email>123</email>
+          <address>2134</address>
+          <eircode>1234</eircode>
+          <accessibilityInfo>1234</accessibilityInfo>
+          <records>
+            <size>0</size>
+          </records>
+        </contents>
+      </head>
+      <tail reference="../head"/>
+      <size>1</size>
+    </patients>
+  </Main.Driver>
+</object-stream>
