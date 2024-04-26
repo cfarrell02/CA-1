@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Vaccination Management System" />
+        <module name="Vaccination_Management_System" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
